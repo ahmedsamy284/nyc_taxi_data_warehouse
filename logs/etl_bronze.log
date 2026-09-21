@@ -1,0 +1,61 @@
+2026-09-19 00:53:00,776 - INFO - 
+==================================================
+=== Starting ETL process for Bronze layer ===
+==================================================
+2026-09-19 00:53:00,776 - INFO - Truncating table: bronze.date_raw
+2026-09-19 00:53:00,814 - INFO - Table bronze.date_raw truncated successfully.
+2026-09-19 00:53:00,814 - INFO - Loading data from C:\Users\DELL\Desktop\nyc_taxi_project\data\dim_date.csv into bronze.date_raw...
+2026-09-19 00:53:00,849 - INFO - Successfully loaded 31 records into bronze.date_raw.
+2026-09-19 00:53:00,849 - INFO - Truncating table: bronze.taxi_location_raw
+2026-09-19 00:53:00,853 - INFO - Table bronze.taxi_location_raw truncated successfully.
+2026-09-19 00:53:00,853 - INFO - Loading data from C:\Users\DELL\Desktop\nyc_taxi_project\data\taxi_zone_lookup.csv into bronze.taxi_location_raw...
+2026-09-19 00:53:00,859 - INFO - Columns renamed for table bronze.taxi_location_raw as per mapping: {'LocationID': 'location_id', 'Borough': 'borough', 'Zone': 'zone_name'}
+2026-09-19 00:53:00,880 - INFO - Successfully loaded 265 records into bronze.taxi_location_raw.
+2026-09-19 00:53:00,880 - INFO - Truncating table: bronze.weather_raw
+2026-09-19 00:53:00,881 - INFO - Table bronze.weather_raw truncated successfully.
+2026-09-19 00:53:00,881 - INFO - Loading data from C:\Users\DELL\Desktop\nyc_taxi_project\data\weather_data.csv into bronze.weather_raw...
+2026-09-19 00:53:00,894 - INFO - Columns renamed for table bronze.weather_raw as per mapping: {'datetime': 'date_time'}
+2026-09-19 00:53:00,933 - INFO - Successfully loaded 744 records into bronze.weather_raw.
+2026-09-19 00:53:00,933 - INFO - Truncating table: bronze.taxi_trips_raw
+2026-09-19 00:53:00,937 - INFO - Table bronze.taxi_trips_raw truncated successfully.
+2026-09-19 00:53:00,937 - INFO - Starting chunked ingestion from C:\Users\DELL\Desktop\nyc_taxi_project\data\yellow_tripdata_2026-01.parquet into bronze.taxi_trips_raw...
+2026-09-19 00:53:03,465 - INFO - Batch 1 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:05,716 - INFO - Batch 2 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:07,843 - INFO - Batch 3 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:10,008 - INFO - Batch 4 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:12,136 - INFO - Batch 5 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:14,296 - INFO - Batch 6 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:16,478 - INFO - Batch 7 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:18,793 - INFO - Batch 8 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:21,275 - INFO - Batch 9 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:23,434 - INFO - Batch 10 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:25,565 - INFO - Batch 11 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:27,717 - INFO - Batch 12 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:29,876 - INFO - Batch 13 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:32,282 - INFO - Batch 14 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:34,698 - INFO - Batch 15 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:37,097 - INFO - Batch 16 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:39,471 - INFO - Batch 17 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:41,751 - INFO - Batch 18 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:43,997 - INFO - Batch 19 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:46,297 - INFO - Batch 20 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:48,725 - INFO - Batch 21 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:50,968 - INFO - Batch 22 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:53,458 - INFO - Batch 23 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:55,826 - INFO - Batch 24 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:53:58,220 - INFO - Batch 25 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:00,521 - INFO - Batch 26 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:02,864 - INFO - Batch 27 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:05,373 - INFO - Batch 28 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:07,744 - INFO - Batch 29 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:10,078 - INFO - Batch 30 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:12,580 - INFO - Batch 31 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:14,814 - INFO - Batch 32 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:17,002 - INFO - Batch 33 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:19,170 - INFO - Batch 34 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:21,741 - INFO - Batch 35 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:24,298 - INFO - Batch 36 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:26,849 - INFO - Batch 37 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:27,394 - INFO - Batch 38 loaded successfully into bronze.taxi_trips_raw.
+2026-09-19 00:54:27,394 - INFO - Successfully completed chunked ingestion into bronze.taxi_trips_raw.
+2026-09-19 00:54:27,394 - INFO - === ETL process for Bronze layer completed successfully ===
